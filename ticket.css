@@ -1,0 +1,157 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6f8; /* Light gray background similar to Workday */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+/* Header and Navigation Styles */
+header {
+    width: 100%;
+    background-color:  #ffffff; /* Dark gray background for header */
+    color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+nav ul li {
+    margin: 0;
+    position: relative; /* Ensure submenu is positioned relative to parent li */
+}
+
+nav ul li a {
+    color: #333; /* Dark text for links */
+    text-decoration: none;
+    padding: 12px 20px; /* Adjust padding for medium size */
+    display: flex;
+    align-items: center;
+    font-size: 1em; /* Medium font size */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter gray for hover effect */
+    transform: scale(1.05);
+}
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Submenu Styles */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    border-radius: 4px;
+    min-width: 200px;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    padding: 12px 20px;
+    display: block;
+    color: #fff;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Show submenu on hover */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+/* Ticket Container */
+.ticket-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* White background for the form area */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin: 60px auto 0 auto; /* Center horizontally, margin-top to account for fixed header */
+}
+
+.ticket-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray for heading */
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0076d6; /* Subtle blue for buttons */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005b9a; /* Darker blue for hover effect */
+}
+
+.timer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bell-icon {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #f39c12; /* Color for the bell icon */
+    cursor: pointer;
+    display: none;
+}
+
+/* Ensure timer display has proper styling */
+#timer-display {
+    font-size: 1.5em;
+    margin: 0 10px;
+}

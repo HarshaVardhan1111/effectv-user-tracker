@@ -1,0 +1,139 @@
+/* General Body Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6f8;
+    color: #333;
+}
+
+/* Header and Navigation Styles */
+header {
+    width: 100%;
+    background-color: #ffffff; 
+    color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0;
+    position: relative;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Submenu Styles */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border-radius: 4px;
+    min-width: 200px;
+    z-index: 1000;
+    padding: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    padding: 0;
+    color: #333;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Stats Background and Content Styles */
+.stats-background {
+    padding-top: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); 
+}
+
+.stats-content {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Stats Table Styles */
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.stats-table th, .stats-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.stats-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.stats-table td {
+    background-color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats</title>
+    <link rel="stylesheet" href="stats.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="ticket.html"><i class="fas fa-ticket-alt"></i> Manage Ticket</a></li>
+                <li>
+                    <a href="#"><i class="fas fa-chart-line"></i> Reports</a>
+                    <ul class="submenu">
+                        <li><a href="stats.html">Stats</a></li>
+                        <!-- Other submenu items -->
+                    </ul>
+                </li>
+                <!-- Other navigation items -->
+            </ul>
+        </nav>
+    </header>
+    <div class="stats-background">
+        <div class="stats-content">
+            <h1>Monthly Stats</h1>
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>January</th>
+                        <th>February</th>
+                        <th>March</th>
+                        <th>April</th>
+                        <th>May</th>
+                        <th>June</th>
+                        <th>July</th>
+                        <th>August</th>
+                        <th>September</th>
+                        <th>October</th>
+                        <th>November</th>
+                        <th>December</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Tickets</td>
+                        <td id="jan-tickets"></td>
+                        <td id="feb-tickets"></td>
+                        <td id="mar-tickets"></td>
+                        <td id="apr-tickets"></td>
+                        <td id="may-tickets"></td>
+                        <td id="jun-tickets"></td>
+                        <td id="jul-tickets"></td>
+                        <td id="aug-tickets"></td>
+                        <td id="sep-tickets"></td>
+                        <td id="oct-tickets"></td>
+                        <td id="nov-tickets"></td>
+                        <td id="dec-tickets"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Orders</td>
+                        <td id="jan-orders"></td>
+                        <td id="feb-orders"></td>
+                        <td id="mar-orders"></td>
+                        <td id="apr-orders"></td>
+                        <td id="may-orders"></td>
+                        <td id="jun-orders"></td>
+                        <td id="jul-orders"></td>
+                        <td id="aug-orders"></td>
+                        <td id="sep-orders"></td>
+                        <td id="oct-orders"></td>
+                        <td id="nov-orders"></td>
+                        <td id="dec-orders"></td>
+                    </tr>
+                    <tr>
+                        <td>Internal Errors</td>
+                        <td id="jan-internal-errors"></td>
+                        <td id="feb-internal-errors"></td>
+                        <td id="mar-internal-errors"></td>
+                        <td id="apr-internal-errors"></td>
+                        <td id="may-internal-errors"></td>
+                        <td id="jun-internal-errors"></td>
+                        <td id="jul-internal-errors"></td>
+                        <td id="aug-internal-errors"></td>
+                        <td id="sep-internal-errors"></td>
+                        <td id="oct-internal-errors"></td>
+                        <td id="nov-internal-errors"></td>
+                        <td id="dec-internal-errors"></td>
+                    </tr>
+                    <tr>
+                        <td>External Errors</td>
+                        <td id="jan-external-errors"></td>
+                        <td id="feb-external-errors"></td>
+                        <td id="mar-external-errors"></td>
+                        <td id="apr-external-errors"></td>
+                        <td id="may-external-errors"></td>
+                        <td id="jun-external-errors"></td>
+                        <td id="jul-external-errors"></td>
+                        <td id="aug-external-errors"></td>
+                        <td id="sep-external-errors"></td>
+                        <td id="oct-external-errors"></td>
+                        <td id="nov-external-errors"></td>
+                        <td id="dec-external-errors"></td>
+                    </tr>
+                    <tr>
+                        <td>Team Average</td>
+                        <td id="jan-team-average"></td>
+                        <td id="feb-team-average"></td>
+                        <td id="mar-team-average"></td>
+                        <td id="apr-team-average"></td>
+                        <td id="may-team-average"></td>
+                        <td id="jun-team-average"></td>
+                        <td id="jul-team-average"></td>
+                        <td id="aug-team-average"></td>
+                        <td id="sep-team-average"></td>
+                        <td id="oct-team-average"></td>
+                        <td id="nov-team-average"></td>
+                        <td id="dec-team-average"></td>
+                    </tr>
+                    <tr>
+                        <td>Revenue Loss</td>
+                        <td id="jan-revenue-loss"></td>
+                        <td id="feb-revenue-loss"></td>
+                        <td id="mar-revenue-loss"></td>
+                        <td id="apr-revenue-loss"></td>
+                        <td id="may-revenue-loss"></td>
+                        <td id="jun-revenue-loss"></td>
+                        <td id="jul-revenue-loss"></td>
+                        <td id="aug-revenue-loss"></td>
+                        <td id="sep-revenue-loss"></td>
+                        <td id="oct-revenue-loss"></td>
+                        <td id="nov-revenue-loss"></td>
+                        <td id="dec-revenue-loss"></td>
+                    </tr>
+                    <tr>
+                        <td>Taken Leaves</td>
+                        <td id="jan-taken-leaves"></td>
+                        <td id="feb-taken-leaves"></td>
+                        <td id="mar-taken-leaves"></td>
+                        <td id="apr-taken-leaves"></td>
+                        <td id="may-taken-leaves"></td>
+                        <td id="jun-taken-leaves"></td>
+                        <td id="jul-taken-leaves"></td>
+                        <td id="aug-taken-leaves"></td>
+                        <td id="sep-taken-leaves"></td>
+                        <td id="oct-taken-leaves"></td>
+                        <td id="nov-taken-leaves"></td>
+                        <td id="dec-taken-leaves"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Efectv Users. All rights reserved.</p>
+    </footer>
+    <script src="stats.js"></script>
+    <script src="home.js">
+        document.addEventListener('DOMContentLoaded', function() {
+    // Function to show submenu
+    function showSubmenu(event) {
+        const submenu = event.currentTarget.querySelector('.submenu');
+        if (submenu) {
+            submenu.style.display = 'block';
+        }
+    }
+
+    // Function to hide submenu
+    function hideSubmenu(event) {
+        const submenu = event.currentTarget.querySelector('.submenu');
+        if (submenu) {
+            submenu.style.display = 'none';
+        }
+    }
+
+    // Get all navigation items with submenus
+    const navItems = document.querySelectorAll('nav ul li');
+
+    navItems.forEach(item => {
+        // Show submenu on hover
+        item.addEventListener('mouseenter', showSubmenu);
+        // Hide submenu when not hovering
+        item.addEventListener('mouseleave', hideSubmenu);
+    });
+});
+    </script>
+</body>
+</html>
