@@ -17,9 +17,20 @@
                     <a href="#"><i class="fas fa-chart-line"></i> Reports</a>
                     <ul class="submenu">
                         <li><a href="stats.html">Stats</a></li>
+                        <li><a href="attendance.html">Attendance</a></li>
+                        <li><a href="leaves.html">Leaves</a></li>
+                        <li><a href="performance.html">Performance</a></li>
+                        <li><a href="total-order.html">Total Order</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="achievement.html">Achievement</a></li>
                         <!-- Other submenu items -->
                     </ul>
                 </li>
+                <li><a href="supervisor-view.html"><i class="fas fa-user-tie"></i> Supervisor View</a></li>
+                <li class="user-profile">
+                <a href="profile.html"><i class="fas fa-user"></i> User Profile</a>
+                </li>
+                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                 <!-- Other navigation items -->
             </ul>
         </nav>
@@ -188,5 +199,32 @@
     });
 });
     </script>
+       <script>
+        // Wait until the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+        const redirectButton = document.querySelector('nav ul li a[href="process.html"]');
+        if (redirectButton) {
+        // Add a click event listener to the "process" link
+        redirectButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+            window.location.href = 'process.html'; // Redirect to stats.html
+        });
+    }
+});
+</script>
+<script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+    const redirectButton2 = document.querySelector('nav ul li a[href="attendance.html"]');
+    if (redirectButton2) {
+    // Add a click event listener to the "process" link
+    redirectButton2.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        window.location.href = 'attendance.html'; // Redirect to stats.html
+    });
+}
+});
+
+</script>
 </body>
 </html>
