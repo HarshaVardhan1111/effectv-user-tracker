@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalOrder = localStorage.getItem('totalOrder');
     const startTime = localStorage.getItem('startTime');
     const endTime = localStorage.getItem('endTime');
-    const elapsedTime = localStorage.getItem('elapsedTime');
+    const elapsedTime = localStorage.getItem('totalTime');
     const clientName = localStorage.getItem('clientName');
     const rating = localStorage.getItem('rating');
 
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('total-order').textContent = totalOrder;
     document.getElementById('start-time').textContent = startTime;
     document.getElementById('end-time').textContent = endTime;
-    document.getElementById('elapsed-time').textContent = elapsedTime;
+    document.getElementById('Total-time').textContent = elapsedTime;
     document.getElementById('client-name').textContent = clientName;
 
     // Display rating
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Export to CSV functionality
     document.getElementById('export-button').addEventListener('click', () => {
         const csvContent = [
-            ['Ticket Number', 'Total Order', 'Start Time', 'End Time', 'Elapsed Time', 'Client Name', 'Rating'],
+            ['Ticket Number', 'Total Order', 'Start Time', 'End Time', 'total Time', 'Client Name', 'Rating'],
             [ticketNumber, totalOrder, startTime, endTime, elapsedTime, clientName, rating]
         ].map(e => e.join(',')).join('\n');
 
