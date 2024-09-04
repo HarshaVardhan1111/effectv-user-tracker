@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     navItems.forEach(item => {
         // Show submenu on hover
         item.addEventListener('mouseenter', showSubmenu);
-        // Hide submenu when not hovering
         item.addEventListener('mouseleave', hideSubmenu);
     });
 });

@@ -20,7 +20,6 @@
                         <li><a href="attendance.html">Attendance</a></li>
                         <li><a href="leaves.html">Leaves</a></li>
                         <li><a href="performance.html">Performance</a></li>
-                        <li><a href="total-order.html">Total Order</a></li>
                         <li><a href="process.html">Process</a></li>
                         <li><a href="achievement.html">Achievement</a></li>
                         <!-- Other submenu items -->
@@ -192,9 +191,7 @@
     const navItems = document.querySelectorAll('nav ul li');
 
     navItems.forEach(item => {
-        // Show submenu on hover
         item.addEventListener('mouseenter', showSubmenu);
-        // Hide submenu when not hovering
         item.addEventListener('mouseleave', hideSubmenu);
     });
 });
@@ -204,10 +201,9 @@
         document.addEventListener('DOMContentLoaded', () => {
         const redirectButton = document.querySelector('nav ul li a[href="process.html"]');
         if (redirectButton) {
-        // Add a click event listener to the "process" link
         redirectButton.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default anchor behavior
-            window.location.href = 'process.html'; // Redirect to stats.html
+            event.preventDefault();
+            window.location.href = 'process.html';
         });
     }
 });
@@ -217,10 +213,9 @@
     document.addEventListener('DOMContentLoaded', () => {
     const redirectButton2 = document.querySelector('nav ul li a[href="attendance.html"]');
     if (redirectButton2) {
-    // Add a click event listener to the "process" link
     redirectButton2.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-        window.location.href = 'attendance.html'; // Redirect to stats.html
+        event.preventDefault(); 
+        window.location.href = 'attendance.html';
     });
 }
 });

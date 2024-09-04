@@ -14,8 +14,8 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
     // Simulated credentials (hardcoded for demonstration purposes)
     const validCredentials = {
-        username: 'harsha',
-        password: 'password'
+        username: 'hsubra154',
+        password: 'Harshapriya@1128'
     };
 
     // Check if credentials match

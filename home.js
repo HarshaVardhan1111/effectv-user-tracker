@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navItems.forEach(item => {
         item.addEventListener('click', function(event) {
             if (this.querySelector('.submenu')) {
-                event.preventDefault(); // Prevent default anchor click behavior
+                event.preventDefault(); 
                 const submenu = this.querySelector('.submenu');
                 submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
             }
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ensure that links perform their default action
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', function(event) {
-            // Allow default behavior for links
         });
     });
 });
