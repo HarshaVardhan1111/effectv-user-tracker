@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             daySlot.innerHTML = `<span class="day-number">${day}</span>`;
 
             // i add status (for demo purposes, you can customize this)
-            const status = Math.random() > 0.5 ? 'P' : ''; // Random present (P) or empty
+            const status = Math.random() > 0.5 ? '' : ''; // Random present (P) or empty
             if (status) {
                 daySlot.innerHTML += `<span class="status">${status}</span>`;
             }
